@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suit 1">
+
+    <test name="Test 1">
+        <parameter name="query" value="select * from actor"></parameter>
+        <classes>
+            <class name="sending_Query_from_XML"></class>
+        </classes>
+    </test>
+
+    <test name="Test 2">
+        <parameter name="query" value="select * from city"></parameter>
+        <classes>
+            <class name="sending_Query_from_XML"></class>
+        </classes>
+    </test>
+
+    <test name="Test 3">
+        <parameter name="query" value="select customer_id, first_name, last_name, email from customer;"></parameter>
+        <classes>
+            <class name="sending_Query_from_XML"></class>
+        </classes>
+    </test>
+</suite>
